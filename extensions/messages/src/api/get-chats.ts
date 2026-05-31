@@ -44,14 +44,14 @@ export async function getChats(searchText: string = ""): Promise<Chat[]> {
       chat.chat_identifier
     ORDER BY
       last_message_date DESC
-    LIMIT 1000;
+    LIMIT ${searchText ? "1000" : "50"};
     `,
   );
 
   if (!rawData) return [];
 
   const uniqueChatIdentifiers = [...new Set(rawData.map((c) => c.chat_identifier))];
-  const contacts = await fetchContactsForPhoneNumbers(uniqueChatIdentifiers);
+  const contacts = await fetchContactsForPhoneNumbers(uniqueChatIdentifiers, false);
   const contactMap = createContactMap(contacts);
 
   const chats = rawData.map((c) => {

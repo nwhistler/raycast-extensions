@@ -34,7 +34,7 @@ async function launchMyIssues(): Promise<void> {
  * It reads preferences for label inclusion/exclusion and passes them to the issues API.
  */
 
-export default function MenuCommand(): JSX.Element {
+export default function MenuCommand() {
   // Memoize preferences to avoid unnecessary re-renders and rendering loops
   const preferences = useMemo(() => getPreferenceValues(), []);
   const includeLabels =
@@ -43,10 +43,12 @@ export default function MenuCommand(): JSX.Element {
     preferences.excludeLabels && preferences.excludeLabels.trim().length > 0 ? preferences.excludeLabels : undefined;
   const showItemsCount = preferences.showtext as boolean;
   const maxIssues = getBoundedPreferenceNumber({ name: "maxitems" });
+  const hideArchived = preferences.hideArchived as boolean;
 
   const { issues, isLoading, error } = useMyIssues(IssueScope.assigned_to_me, IssueState.opened, undefined, {
     includeLabels,
     excludeLabels,
+    ...(hideArchived && { non_archived: true }),
   });
   const assignedCount = issues?.length || 0;
 
