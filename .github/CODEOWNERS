@@ -33,6 +33,7 @@
 /extensions/affine-raycast                                          @yassineS
 /extensions/ag-audioflow                                            @asgu @pernielsentikaer
 /extensions/agent-client-protocol                                   @Yukaii
+/extensions/agent-ecosystem-map                                     @spyrae
 /extensions/agent-usage                                             @natsustan @alexibuild @AdrianBonpin @GarrickZ2
 /extensions/ai-agency                                               @Marcin-91
 /extensions/ai-by-vercel                                            @ridemountainpig
@@ -332,6 +333,7 @@
 /extensions/china-ip-address                                        @ErlichLiu
 /extensions/chinese-character                                       @koinzhang
 /extensions/chinese-character-converter                             @f88083
+/extensions/chinese-converter                                       @tofrankie
 /extensions/chinese-lottery                                         @elonwoo @pernielsentikaer
 /extensions/chinese-numbers                                         @raffeyang
 /extensions/choose-a-license                                        @sandypockets @Aayush9029
@@ -1560,7 +1562,7 @@
 /extensions/my-daily-log                                            @frugoman
 /extensions/my-idlers                                               @xmok
 /extensions/myanimelist-search                                      @luknl @TakenMC
-/extensions/myip                                                    @kkange @iwyvi @j3lte @HsuQ @pernielsentikaer @ViGeng @sebdanielsson
+/extensions/myip                                                    @kkange @iwyvi @j3lte @HsuQ @pernielsentikaer @ViGeng @sebdanielsson @greiner-petter
 /extensions/mymind                                                  @arian81
 /extensions/mynaui-icons                                            @praveenjuge
 /extensions/n8n                                                     @koinzhang @xmok
@@ -1863,6 +1865,7 @@
 /extensions/pipedrive                                               @ahpatel @xmok
 /extensions/pitchcast                                               @stuartromanek
 /extensions/pitchfork                                               @koayon
+/extensions/pivot                                                   @codythatsme
 /extensions/pixabay                                                 @tonka3000 @mjherich @j3lte
 /extensions/pkg-swap                                                @neversitdull
 /extensions/placeholder                                             @koinzhang @j3lte @xmok
